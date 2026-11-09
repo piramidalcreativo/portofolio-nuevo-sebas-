@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sebastián Martínez Cortés — Portfolio creativo</title>
+  <meta name="description" content="Portfolio de Sebastián Martínez Cortés. Diseño gráfico, producción audiovisual e inteligencia artificial aplicada en Alfafar, Valencia.">
+  <meta name="theme-color" content="#101112">
+  <link rel="icon" href="assets/marca.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="navigation-curtain" data-phase="idle" aria-hidden="true"><span></span><span></span></div>
+  <a class="skip" href="#proyectos">Saltar al contenido</a>
+  <header class="site-header pointer-grid">
+    <a class="monogram" href="#inicio" aria-label="Sebastián Martínez Cortés, inicio">SM<span>.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a><a href="#areas">Áreas</a><a href="#galeria">Galería</a><a href="#sobre-mi">Sobre mí</a><a href="#contacto">Contacto ↗</a>
+    </nav>
+    <button class="theme" type="button" aria-label="Activar modo claro" aria-pressed="false"><span aria-hidden="true">☾</span><span aria-hidden="true">☀</span></button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero pointer-grid" aria-labelledby="hero-title">
+      <div class="hero-layout">
+        <p class="hero-index micro"><span></span> Portfolio creativo <b>/</b> 2026</p>
+        <h1 id="hero-title" aria-label="Sebastián Martínez Cortés"><span>Sebastián</span><span>Martínez</span></h1>
+        <figure class="portrait">
+          <svg id="portrait" viewBox="0 0 1198 1313" role="img" aria-labelledby="portrait-title">
+            <title id="portrait-title">Ilustración de Sebastián Martínez Cortés con ojos verdes</title>
+            <defs>
+              <image id="avatar" href="assets/avatar.webp" width="1198" height="1313"/>
+              <clipPath id="lid-left">
+                <path d="M355 644 C363 614 402 590 446 589 C484 587 518 608 536 647 C542 658 543 660 533 664 C503 671 461 677 430 673 C395 671 366 659 355 644Z"/>
+              </clipPath>
+              <clipPath id="lid-right">
+                <path d="M688 669 C699 642 731 615 765 612 C801 609 838 625 856 652 C865 663 870 673 859 677 C831 688 769 688 729 683 C709 681 691 680 688 669Z"/>
+              </clipPath>
+              <radialGradient id="sclera-left" gradientUnits="userSpaceOnUse" cx="454" cy="646" r="114" gradientTransform="translate(0 336) scale(1 .48)">
+                <stop stop-color="#eee6e1"/><stop offset=".67" stop-color="#ded2cc"/><stop offset="1" stop-color="#99807a"/>
+              </radialGradient>
+              <radialGradient id="sclera-right" gradientUnits="userSpaceOnUse" cx="772" cy="660" r="108" gradientTransform="translate(0 356) scale(1 .46)">
+                <stop stop-color="#eee6e1"/><stop offset=".67" stop-color="#ded2cc"/><stop offset="1" stop-color="#9b837b"/>
+              </radialGradient>
+              <linearGradient id="lid-shadow" x2="0" y2="1">
+                <stop stop-color="#291911" stop-opacity=".64"/><stop offset=".46" stop-color="#291911" stop-opacity="0"/>
+                <stop offset=".82" stop-color="#291911" stop-opacity="0"/><stop offset="1" stop-color="#765a50" stop-opacity=".22"/>
+              </linearGradient>
+              <filter id="soft-sclera"><feGaussianBlur stdDeviation="2"/></filter>
+              <radialGradient id="iris-color">
+                <stop offset=".33" stop-color="#110f0a"/><stop offset=".41" stop-color="#8a7830"/><stop offset=".77" stop-color="#526035"/><stop offset="1" stop-color="#272e1d"/>
+              </radialGradient>
+              <radialGradient id="iris-texture-edge">
+                <stop offset=".9" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/>
+              </radialGradient>
+              <mask id="texture-left" maskUnits="userSpaceOnUse" x="406" y="581" width="100" height="100">
+                <circle cx="456" cy="631" r="49.5" fill="url(#iris-texture-edge)"/>
+              </mask>
+              <mask id="texture-right" maskUnits="userSpaceOnUse" x="723" y="598" width="93" height="93">
+                <circle cx="770" cy="645" r="45.5" fill="url(#iris-texture-edge)"/>
+              </mask>
+            </defs>
+            <use href="#avatar"/>
+            <g class="gaze" clip-path="url(#lid-left)">
+              <g filter="url(#soft-sclera)">
+                <circle cx="456" cy="631" r="53" fill="url(#sclera-left)"/>
+                <circle cx="456" cy="631" r="53" fill="url(#lid-shadow)"/>
+              </g>
+              <g data-iris>
+                <circle cx="456" cy="631" r="49" fill="url(#iris-color)"/>
+                <g mask="url(#texture-left)"><use href="#avatar" clip-path="url(#lid-left)"/></g>
+              </g>
+            </g>
+            <g class="gaze" clip-path="url(#lid-right)">
+              <g filter="url(#soft-sclera)">
+                <circle cx="770" cy="645" r="49" fill="url(#sclera-right)"/>
+                <circle cx="770" cy="645" r="49" fill="url(#lid-shadow)"/>
+              </g>
+              <g data-iris>
+                <circle cx="770" cy="645" r="45" fill="url(#iris-color)"/>
+                <g mask="url(#texture-right)"><use href="#avatar" clip-path="url(#lid-right)"/></g>
+              </g>
+            </g>
+          </svg>
+        </figure>
+        <p class="hero-location micro">Alfafar, Valencia <span>↗</span></p>
+        <a class="hero-scroll micro" href="#proyectos"><span>↓</span> Explorar portfolio</a>
+        <div class="hero-role" aria-label="Diseño gráfico, producción audiovisual e inteligencia artificial aplicada"><span id="role-text" aria-hidden="true">Diseñador gráfico</span><span class="caret" aria-hidden="true"></span></div>
+      </div>
+    </section>
+
+    <section class="projects light-section" id="proyectos" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-head"><span class="micro">01 / Selección de trabajos</span><h2 id="projects-title">Proyectos</h2><p>Campañas, contenido audiovisual y piezas para marcas.</p></div>
+        <div class="project-list" id="project-list"></div>
+        <a class="outline-link" href="#galeria">Ver la galería completa <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="about pointer-grid" id="sobre-mi" aria-labelledby="about-title">
+      <div class="wrap about-layout">
+        <div><span class="micro">02 / Sobre mí</span><h2 id="about-title">Diseño, imagen e IA.</h2><p class="micro about-location">Alfafar, Valencia · España</p></div>
+        <div class="about-content">
+          <p class="lead">Soy Sebastián Martínez Cortés, diseñador gráfico y realizador audiovisual con más de siete años de experiencia en agencias y empresas.</p>
+          <p>Trabajo en identidad visual, campañas y contenido para marcas. Uso Claude y ChatGPT para preparar guiones, adaptar textos y documentar procesos. Con Higgsfield exploro variantes visuales y de vídeo antes de llevar las piezas a edición y acabado.</p>
+          <p>También diseño automatizaciones que conectan formularios, CRM y mensajería para dar seguimiento a consultas y contactos comerciales.</p>
+          <h3>Trayectoria profesional</h3>
+          <div class="timeline">
+            <details open><summary><span><strong>Muebles El Chollazo</strong><small>Coordinador de ventas y marketing</small></span><time>2025 – Actualidad</time></summary><p>Diseño campañas y contenido de producto. Creo plantillas de IA para textos, guiones y descripciones, y preparo variantes de anuncios con Higgsfield para su acabado en edición. Desarrollo flujos de seguimiento comercial y un asistente de atención al cliente que responde preguntas frecuentes y deriva casos complejos al equipo.</p></details>
+            <details><summary><span><strong>UDB Alfafar</strong><small>Coordinador audiovisual</small></span><time>2024 – 2026</time></summary><p>Produje fotografías, vídeos y animaciones para redes. Planifiqué publicaciones, coordiné contenidos de campañas y patrocinios, y revisé métricas para ajustar las piezas a Instagram, Facebook y TikTok.</p></details>
+            <details><summary><span><strong>Tazmania Fast Food</strong><small>Diseñador de medios audiovisuales</small></span><time>2024</time></summary><p>Realicé sesiones de foto y vídeo en el local, edité piezas de producto y promociones y organicé su publicación en redes. Revisé el rendimiento de los contenidos y adapté las siguientes publicaciones.</p></details>
+            <details><summary><span><strong>La Bicicletería Colombia</strong><small>Diseñador gráfico</small></span><time>2020 – 2023</time></summary><p>Desarrollé y administré la web, planifiqué contenidos y elaboré material publicitario. Coordiné preproducción, rodaje y edición de vídeos y fotografías, además de piezas animadas, campañas sociales y cobertura de eventos.</p></details>
+            <details><summary><span><strong>Vangtry Technology SAS</strong><small>Content Manager</small></span><time>2019 – 2020</time></summary><p>Gestioné cuentas publicitarias y redes de clientes de la agencia. Diseñé y administré sitios en WordPress y produje fotografía de producto, animaciones y vídeos.</p></details>
+            <details><summary><span><strong>Frecuencia Capital</strong><small>Diseñador gráfico</small></span><time>2017 – 2018</time></summary><p>Diseñé piezas para redes de pequeñas y medianas empresas colombianas. Apoyé la consultoría de comunicación digital y la planificación de anuncios y promociones.</p></details>
+            <details><summary><span><strong>Santillana Colombia</strong><small>Diseñador gráfico editorial</small></span><time>2017 – 2018</time></summary><p>Elaboré y retoqué imágenes para materiales educativos en coordinación con los editores. Gestioné el banco de imágenes y corregí el color de fotografías e ilustraciones.</p></details>
+          </div>
+          <div class="education"><span class="micro">Formación</span><p><strong>Diseño gráfico</strong><br>Fundación Universitaria Los Libertadores · 2019 – 2022</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools" aria-labelledby="tools-title"><div class="wrap"><h2 id="tools-title" class="micro">Herramientas de trabajo</h2><ul><li>Photoshop</li><li>Illustrator</li><li>Premiere Pro</li><li>After Effects</li><li>DaVinci Resolve</li><li>Claude</li><li>ChatGPT</li><li>Higgsfield</li><li>WordPress</li></ul></div></section>
+
+    <section class="areas" id="areas" aria-labelledby="areas-title">
+      <div class="wrap">
+        <div class="section-head"><span class="micro">03 / Áreas</span><h2 id="areas-title">Lo que hago</h2></div>
+        <ol class="area-list">
+          <li><span>01</span><h3>Diseño gráfico e identidad</h3><p>Sistemas visuales, catálogos, gráficas de campaña y adaptaciones para redes, web e impresión.</p></li>
+          <li><span>02</span><h3>Producción audiovisual</h3><p>Guion, rodaje, fotografía, edición, motion graphics y corrección de color.</p></li>
+          <li><span>03</span><h3>IA aplicada y automatización</h3><p>Flujos para crear variantes de contenido, responder preguntas frecuentes y conectar formularios, CRM y mensajería.</p></li>
+          <li><span>04</span><h3>Contenido y estrategia digital</h3><p>Planificación editorial, campañas en redes y lectura de métricas para ajustar formatos y mensajes.</p></li>
+          <li><span>05</span><h3>Web y comercio electrónico</h3><p>Diseño, gestión de contenidos y mantenimiento de webs con WordPress y WooCommerce.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="gallery light-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head"><span class="micro">04 / Archivo visual</span><h2 id="gallery-title">Galería</h2><p>Una selección de piezas publicadas en Behance. Abre cada trabajo para ver su ficha.</p></div>
+        <div class="filters" role="group" aria-label="Filtrar proyectos por disciplina">
+          <button type="button" data-filter="all" aria-pressed="true">Todo</button>
+          <button type="button" data-filter="campanas" aria-pressed="false">Campañas</button>
+          <button type="button" data-filter="audiovisual" aria-pressed="false">Audiovisual</button>
+          <button type="button" data-filter="fotografia" aria-pressed="false">Fotografía</button>
+          <button type="button" data-filter="social" aria-pressed="false">Social media</button>
+        </div>
+        <p id="gallery-count" class="micro" aria-live="polite"></p>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <noscript><p><a href="https://www.behance.net/sebastimartne18">Ver todos los proyectos en Behance ↗</a></p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact pointer-grid" id="contacto">
+    <div class="wrap">
+      <span class="micro">05 / Contacto</span>
+      <h2>¿Hablamos?</h2>
+      <p>Cuéntame qué tienes en mente.</p>
+      <a class="email" href="mailto:piramidalcreativo@gmail.com">piramidalcreativo@gmail.com <span>↗</span></a>
+      <div class="footer-row"><span>Sebastián Martínez Cortés · Alfafar, Valencia</span><div><a href="https://www.behance.net/sebastimartne18" target="_blank" rel="noopener">Behance ↗</a><a href="https://www.linkedin.com/in/sebastianmartinezcortes/" target="_blank" rel="noopener">LinkedIn ↗</a></div><a href="#inicio">Volver arriba ↑</a></div>
+    </div>
+  </footer>
+
+  <dialog id="project-dialog" aria-labelledby="detail-title">
+    <div class="dialog-top"><span class="micro">Ficha de proyecto</span><form method="dialog"><button class="dialog-close" aria-label="Cerrar ficha" autofocus>×</button></form></div>
+    <img id="detail-cover" alt="" width="808" height="632">
+    <div class="dialog-content">
+      <span class="micro" id="detail-category"></span><h2 id="detail-title"></h2><p id="detail-description"></p>
+      <a id="detail-link" class="outline-link" target="_blank" rel="noopener">Ver proyecto en Behance ↗</a>
+    </div>
+  </dialog>
+</body>
+</html>
